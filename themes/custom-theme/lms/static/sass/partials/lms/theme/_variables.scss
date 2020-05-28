@@ -1,0 +1,16 @@
+// Sample red theme to demonstrate SASS overrides
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+// Theme colors
+//
+// Note: define colors needed by your theme first
+// Define the primary red color
+$blue: #3f7acc;
+$gold: #f9a134;
+// Make red the primary color
+$primary: $blue;
+$secondary: $gold;
+// Theme fonts
+$font-family-sans-serif: 'Raleway',
+sans-serif;
+// Initialize the Open edX Bootstrap theme
+@import 'edx-bootstrap/sass/open-edx/theme';

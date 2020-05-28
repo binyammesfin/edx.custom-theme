@@ -1,0 +1,513 @@
+// Extra rules needed for the LMS red theme
+//
+// The _extras.scss file is imported after all other rules by
+// the LMS Sass. For your own theme, you can override this file
+// to add any custom rules that you need. You can also import
+// partials directly into this file so that you can break your
+// rules into modular pieces.
+@import 'certificates';
+
+/* UPEACE - LMS-MAIN-V1 --- START*/
+
+.upeace-site-footer {
+    background-color: #3f7acc;
+    padding: 45px 0 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.upeace-site-link a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.upeace-site-link a:hover {
+    color: #f9a134;
+    text-decoration: none;
+}
+
+.upeace-site-link a:visited {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.upeace-background-login {
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+/*UPEACE - LOGIN */
+
+.upeace-login-box {
+    background-color: #fff;
+    margin: 0;
+    min-height: 100vh;
+    max-height: 100%;
+    border-radius: 0;
+    padding: 0 50px 0 50px;
+    padding-top: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.upeace-login-box-body {
+    max-width: 400px;
+}
+
+.upeace-login-box .upeace-africa-logo {
+    display: block;
+    margin: 20px 0 20px 0;
+}
+
+.upeace-login-transparent {
+    background-color: transparent;
+}
+
+.upeace-label {
+    font-size: 0.75rem;
+}
+
+.upeace-home-header {
+    height: 100vh;
+}
+
+.upeace-home-title {
+    margin-right: 0;
+    width: 50%;
+    font-size: 64px;
+    line-height: 77px;
+    padding: 0;
+    color: rgba(255, 255, 255);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+    background: rgba(76, 175, 80, 0);
+    text-align: center;
+}
+
+.upeace-home-main-h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.upeace-home-main-h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: #fff;
+    padding-top: 20px;
+}
+
+
+/* UPECE COURSE*/
+
+.upeace-course {
+    font-family: "Raleway", sans-serif;
+}
+
+.upeace-course h2 {
+    color: #3f7acc;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.upeace-course h3 {
+    color: rgb(0, 0, 0, 0.8);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.upeace-course p {
+    font-size: 0, 75rem;
+    line-height: 1.5rem;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+
+/*UPEACE OVERIDE*/
+
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.content-wrapper {
+    max-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    margin-top: 0;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .content-wrapper {
+        padding: 0;
+    }
+}
+
+.global-header {
+    background: #3f7acc;
+    background-color: #3f7acc;
+    border-bottom: 0px solid #3f7acc;
+    padding-bottom: 5px;
+}
+
+.global-header .header-logo a {
+    margin: 5px 0 0 20px;
+}
+
+.global-header .header-logo a .logo {
+    height: 80px;
+}
+
+.login-register .form-field input {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #3f7acc;
+}
+
+.home>header .title {
+    margin-right: 0;
+    margin-left: 0;
+    width: 50%;
+    font-size: 200px;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    background: rgba(76, 175, 80, 0);
+}
+
+.login-register .form-field label {
+    padding-left: 5px;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #3f7acc !important;
+}
+
+.btn-primary:hover {
+    background-color: #f9a134 !important;
+}
+
+.btn-primary:hover {
+    background-color: #f9a134 !important;
+}
+
+.course-info header.course-profile {
+    background: #fff;
+    background-size: cover;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 0px solid #646464;
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    height: 240px;
+    padding-top: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta span.register {
+    background: #3f7acc;
+    border: 1px solid #3f7acc;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    letter-spacing: 1px;
+    padding: 10px 0 8px;
+    text-align: center;
+    float: left;
+    margin: 1px 3.57866% 0 0;
+    transition: none;
+    width: 61.158%;
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register {
+    border: 0px solid #000026;
+    border-bottom: px solid #000;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 0 #535b83;
+    color: #fff;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    background-color: #3f7acc;
+    background-image: none;
+    /* background-image: -webkit-linear-gradient(top, #3f7acc 0%, #000c56 50%, #000047 50%, #000049 100%); */
+    /* background-image: linear-gradient(to bottom, #3f7acc 0%, #000c56 50%, #000047 50%, #000049 100%); */
+    padding: 7px 18px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 0 #000005;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: block;
+    font: normal 1.2rem/1.6rem "Raleway", sans-serif;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    text-align: center;
+    width: 48.82117%;
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:hover:not(:disabled) {
+    background-color: #f9a134;
+    background-image: none;
+    /* background-image: -webkit-linear-gradient(top, #212f65 0%, #004 50%, #000035 50%, #000038 100%); */
+    /* background-image: linear-gradient(to bottom, #212f65 0%, #004 50%, #000035 50%, #000038 100%); */
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro>.heading-group h1 {
+    color: #3f7acc;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0;
+    letter-spacing: 0;
+    text-align: left;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro>.heading-group span {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+    display: none;
+    margin: 0;
+    letter-spacing: 0;
+    text-align: left;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.6);
+}
+
+button:hover:not(:disabled) {
+    cursor: pointer;
+    background-color: #f9a134;
+    background-image: none;
+    /* background-image: -webkit-linear-gradient(top, #212f65 0%, #004 50%, #000035 50%, #000038 100%); */
+    background-image: linear-gradient(to bottom, #f9a134 0%, #004 0%, #f9a134 0%, #f9a134 100%);
+}
+
+.dashboard .main-container .my-courses .course .details .enter-course {
+    border: 1px solid #3f7acc;
+    background-color: #3f7acc;
+    color: #fff;
+}
+
+.dashboard .main-container .my-courses .course .details .enter-course:hover {
+    background-color: #f9a134;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+@media (min-width: 992px) {
+    .global-header .nav-links .main .nav-tab a {
+        padding: 5px 25px 7px 19px;
+    }
+}
+
+@media (min-width: 992px) {
+    .global-header .nav-links .main .nav-tab a:hover {
+        border: 1px solid #f9a134;
+        color: #fff;
+        background: rgb(255, 255, 255, 0.5);
+        border-radius: 3px;
+    }
+}
+
+@media (min-width: 992px) {
+    .global-header .nav-links .secondary .nav-item a {
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .global-header .nav-links .secondary .dropdown-user-menu {
+        border: 1px solid #f9a134;
+        background-color: #3f7acc;
+        color: #fff;
+        right: 30px;
+        top: 55px;
+        z-index: 10;
+        text-align: center;
+        width: 180px;
+    }
+}
+
+@media (min-width: 992px) {
+    .global-header .nav-links .secondary .dropdown-user-menu .dropdown-item:hover {
+        background-color: #f9a134;
+    }
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong {
+    border: 0 solid #000026;
+    border-bottom: 0px solid #000;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 0 #535b83;
+    color: #fff;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    background-color: #3f7acc;
+    /*background-image: -webkit-linear-gradient(top, #3f7acc 0%, #000c56 50%, #000047 50%, #000049 100%); */
+    /* background-image: linear-gradient(to bottom, #3f7acc 0%, #000c56 50%, #000047 50%, #000049 100%); */
+    background-image: none;
+    padding: 7px 18px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 0 #000005;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: block;
+    float: left;
+    font: normal 1.2rem/1.6rem "Raleway", sans-serif;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    text-align: center;
+    width: 35.26334%;
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:hover:not(:disabled) {
+    cursor: pointer;
+    background-color: #f9a134;
+    background-image: none
+    /* background-image: -webkit-linear-gradient(top, #212f65 0%, #004 50%, #000035 50%, #000038 100%); */
+    /* background-image: linear-gradient(to bottom, #212f65 0%, #004 50%, #000035 50%, #000038 100%); */
+}
+
+.global-header .header-logo a .logo {
+    height: 80px;
+}
+
+.view-profile .profile-self .wrapper-profile-field-account-privacy .wrapper-profile-records button {
+    border: 1px solid #3f7acc;
+    border-radius: 3px;
+    transition: color 0 ease-in-out, background 0 ease-in-out, box-shadow 0 ease-in-out;
+    text-shadow: none;
+}
+
+.view-profile .profile-self .wrapper-profile-field-account-privacy .wrapper-profile-records button:hover {
+    box-shadow: none;
+    background: #f9a134;
+    border: 1px solid #fff;
+}
+
+.view-profile .profile-header .header {
+    color: #3f7acc;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-title {
+    color: #3f7acc;
+}
+
+.courses-container .courses {
+    padding: 0 20px 0 20px;
+}
+
+@media (min-width: 992px) {
+    .global-header .nav-links .secondary a.register-btn:hover {
+        background-color: #f9a134;
+    }
+}
+
+@media (min-width: 992px) {
+    .global-header .nav-links .secondary a.register-btn {
+        /* background: #fff; */
+        color: #3f7acc;
+    }
+}
+
+
+/* UPEACE - LMS-MAIN-V1 --- END*/
+
+
+/* UPEACE - LMS-MAIN --- START*/
+
+button:hover:not(:disabled) {
+    cursor: pointer;
+    background-color: #fff;
+    background-image: none;
+}
+
+.content-wrapper .course-tabs {
+    padding-left: 30px;
+}
+
+.wrapper-footer footer .footer-about-openedx {
+    float: none;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+
+/* UPEACE - LMS-MAIN- --- END*/
+
+
+/* UPEACE - LMS-COURSE- --- START*/
+
+.wrapper-preview-menu .preview-actions .action-preview .action-preview-select {
+    margin-right: 20px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+body.view-in-course .wrapper-course-material .course-material .course-tabs {
+    padding-left: 15px;
+}
+
+.wrapper-preview-menu .preview-actions .action-preview .action-preview-label {
+    text-shadow: none;
+}
+
+.hd-4 {
+    text-align: left;
+}
+
+.progress {
+    height: 5rem;
+}
+
+body.view-in-course .wrapper-course-material .course-material .course-tabs {
+    text-align: left;
+}
+
+@media (min-width: 992px) {
+    .global-header .nav-links .main .nav-tab a {
+        color: #f9a134;
+    }
+}
+
+.wrapper-course-material .course-tabs .tab a,
+.wrapper-course-material .course-tabs .tab a:visited {
+    color: #f9a134;
+}
+
+#content .progress {
+    height: 5rem;
+}
+
+
+/* UPEACE - LMS-COURSE- --- END*/

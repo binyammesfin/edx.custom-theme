@@ -1,0 +1,14 @@
+<%page expression_filter="h"/>
+
+<%!
+from django.utils.translation import ugettext as _
+from openedx.core.djangolib.markup import HTML, Text
+%>
+
+<div>
+    <h1 class="upeace-home-main-h1">${Text(_(u"Welcome to {platform_name}")).format(platform_name=settings.PLATFORM_NAME)}</h1>
+    <h4 class="upeace-home-main-h4">We provide the best peace building education tailored to Africa</h4>
+</div>
+
+<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Request for Information</a>
+<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Support</a>

@@ -1,0 +1,57 @@
+## mako
+<%page expression_filter="h"/>
+<%!
+  from django.urls import reverse
+  from django.utils.translation import ugettext as _
+  from branding.api import get_footer
+  from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
+%>
+    <% footer = get_footer(is_secure=is_secure) %>
+        <%namespace name='static' file='static_content.html'/>
+
+  <!-- Site footer -->
+  <div class="container-fluid wrapper-footer upeace-site-footer">
+    <footer>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <nav class="navbar site-nav navbar-expand-sm" aria-label="${_('About')}">
+            © 2020 UPEACE Africa Programme. <br />
+            All rights reserved
+          </nav>     
+        </div>
+
+        <div class="col-md-4 text-center align-item-center">
+          <div class="footer-about-upeace">
+            <p>
+              <a href="http://www.africa-upeace.org">
+                <img src="${static.url('images/upafrica_loglarge.png')}" alt="Upeace Africa" width="70" />
+              </a>
+            </p>
+          </div>
+      </div>
+
+      <div class="col-md-4 text-center align-item-center">
+            <div class="footer-about-openedx">
+              <p>
+                <a href="${footer['openedx_link']['url']}">
+                  <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="140" />
+                </a>
+              </p>
+            </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+% if include_dependencies:
+  <%static:js group='base_vendor'/>
+  <%static:css group='style-vendor'/>
+  <%include file="widgets/segment-io.html" />
+  <%include file="widgets/segment-io-footer.html" />
+% endif
+% if footer_css_urls:
+  % for url in footer_css_urls:
+    <link rel="stylesheet" type="text/css" href="${url}"></link>
+  % endfor
+% endif
